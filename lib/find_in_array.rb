@@ -10,7 +10,7 @@ def find_element_index(array, value_to_find)
   found_value_index
 end
 
-# second solution
+# Another solution. This solution will always return the first index of a matching element in the provided array.
 def find_element_index(array, value_to_find)
   count = 0
   while count < array.length do
@@ -19,4 +19,9 @@ def find_element_index(array, value_to_find)
     end
     count += 1
   end
+end
+
+# Another solution
+def find_element_index(array, value_to_find)
+  array.index(value_to_find)
 end
